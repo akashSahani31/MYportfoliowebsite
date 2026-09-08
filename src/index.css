@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+@theme {
+  --color-surface: #0e131f;
+  --color-surface-dim: #0e131f;
+  --color-surface-bright: #343946;
+  --color-surface-container-lowest: #080e1a;
+  --color-surface-container-low: #161c28;
+  --color-surface-container: #1a202c;
+  --color-surface-container-high: #242a36;
+  --color-surface-container-highest: #2f3542;
+  --color-on-surface: #dde2f3;
+  --color-on-surface-variant: #b9cacb;
+  --color-outline: #849495;
+  --color-outline-variant: #3b494b;
+  --color-primary: #dbfcff;
+  --color-on-primary: #00363a;
+  --color-primary-container: #00f0ff;
+  --color-on-primary-container: #006970;
+  --color-primary-fixed: #7df4ff;
+  --color-primary-fixed-dim: #00dbe9;
+  --color-secondary: #adc6ff;
+  --color-secondary-container: #0566d9;
+  --color-secondary-fixed-dim: #adc6ff;
+
+  --font-display-hero: 'Space Grotesk', sans-serif;
+  --font-headline: 'Space Grotesk', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+}
+
+.font-display {
+  font-family: var(--font-display-hero);
+}
+
+.font-code {
+  font-family: var(--font-mono);
+}
+
+/* Custom scrollbar hiding */
+::-webkit-scrollbar {
+  display: none;
+}
+* {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
